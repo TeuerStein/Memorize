@@ -60,10 +60,13 @@
 		B3846CB62543477100818F31 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				B3846CB92543477100818F31 /* SceneDelegate.swift */,
+				B3846CB72543477100818F31 /* AppDelegate.swift */,
 				B3846CBB2543477100818F31 /* ContentView.swift */,
 				B3E329CD25445F11009EA236 /* EmojiMemoryGame.swift */,
 				B3E329CA25445D18009EA236 /* MemoryGame.swift */,
-				B3E329C725444B57009EA236 /* Supporting Files */,
+				B3846CBD2543477300818F31 /* Assets.xcassets */,
+				B3846CC22543477300818F31 /* LaunchScreen.storyboard */,
 				B3846CC52543477300818F31 /* Info.plist */,
 				B3846CBF2543477300818F31 /* Preview Content */,
 			);
@@ -76,17 +79,6 @@
 				B3846CC02543477300818F31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B3E329C725444B57009EA236 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B3846CB72543477100818F31 /* AppDelegate.swift */,
-				B3846CB92543477100818F31 /* SceneDelegate.swift */,
-				B3846CBD2543477300818F31 /* Assets.xcassets */,
-				B3846CC22543477300818F31 /* LaunchScreen.storyboard */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
