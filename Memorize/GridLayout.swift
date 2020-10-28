@@ -38,4 +38,26 @@ struct GridLayout {
         rowCount = bestLayout.rowCount
         columnCount = bestLayout.columnCount
     }
+    
+    var itemSize: CGSize {
+        if rowCount == 0 || columnCount == 0 {
+            return CGSize.zero
+        } else {
+            return CGSize(
+                width: size.width / CGFloat(columnCount),
+                height: size.height / CGFloat(rowCount)
+            )
+        }
+    }
+    
+    func location(ofItemAt index: Int) -> CGPoint {
+        if rowCount == 0 || columnCount == 0 {
+            return CGPoint.zero
+        } else {
+            return CGPoint(
+                x: (CGFloat(index & columnCount) + 0.5) * itemSize.width,
+                y: (CGFloat(index / columnCount) + 0.5) * itemSize.height
+            )
+        }
+    }
 }
