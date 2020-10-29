@@ -55,7 +55,7 @@ struct GridLayout {
             return CGPoint.zero
         } else {
             return CGPoint(
-                x: (CGFloat(index & columnCount) + 0.5) * itemSize.width,
+                x: (CGFloat(index % columnCount) + 0.5) * itemSize.width,
                 y: (CGFloat(index / columnCount) + 0.5) * itemSize.height
             )
         }
